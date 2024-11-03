@@ -1,0 +1,116 @@
+ /* Custom styling for a more modern look */
+ .navbar {
+    background-color: #0d6efd;
+  }
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff !important;
+  }
+  .navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 1rem;
+    transition: color 0.3s;
+  }
+  .navbar-nav .nav-link:hover {
+    color: #ffd700;
+  }
+  .navbar-toggler {
+    border: none;
+    color: #fff;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+    /* Hero Section Styling */
+    .hero {
+        background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?education');
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding: 100px 0;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        opacity: 0;
+        animation: fadeInUp 1s forwards;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-top: 20px;
+        opacity: 0;
+        animation: fadeInUp 1s 0.5s forwards;
+      }
+      .hero .btn {
+        margin-top: 30px;
+        padding: 10px 25px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        opacity: 0;
+        animation: fadeInUp 1s 1s forwards;
+      }
+      
+      /* Keyframes for animation */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+          /* Custom styling for the courses section */
+    .courses-section {
+        padding: 60px 0;
+        background-color: #f8f9fa;
+      }
+      .course-card {
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s;
+      }
+      .course-card:hover {
+        transform: translateY(-10px);
+      }
+      .course-card img {
+        height: 200px;
+        object-fit: cover;
+      }
+      .course-card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      .course-card-text {
+        color: #6c757d;
+      }
+      .course-details {
+        padding: 60px 0;
+      }
+      .course-details h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+      .course-details img {
+        max-width: 100%;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .course-content {
+        margin-top: 30px;
+      }
+      .limited-offer {
+        background-color: #ffc107;
+        color: #212529;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }

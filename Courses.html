@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Responsive Header</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">FREE ROURCES</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Courses.html">Courses</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="category.html">Category  </a>
+              </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- <section class="hero">
+    <div class="container">
+      <h1>Unlock Your Potential with Free Courses</h1>
+      <p>Start learning today with our high-quality, accessible courses that are absolutely free!</p>
+      <a href="#courses" class="btn btn-warning text-dark">Explore Courses</a>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+  <!-- Email Modal -->
+  <div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="emailModalLabel">Get Access to Free Courses</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Enter your email to gain instant access to our free courses!</p>
+          <form id="emailForm">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2>Our Free Courses</h2>
+            <p class="text-muted">Explore our range of free courses designed to help you learn and grow.</p>
+          </div>
+          <div class="row g-4">
+            <!-- Course Card 1 -->
+            <div class="col-md-4">
+              <div class="card course-card shadow-sm">
+                <img src="img/figma.jpg" class="card-img-top" alt="Web Development">
+                <div class="card-body">
+                  <h5 class="course-card-title"> UIUX with Figma and Adobe XD   </h5>
+                  <div class="limited-offer">
+                    Limited Time slot: Enroll for Free!
+                  </div>
+                  <p class="course-card-text">Learn User Interface and User Experience UI UX with Adobe XD and Figma</p>
+              <!-- Updated "View Course" button with specific page link -->
+                <a href="web-development.html" class="btn btn-primary">View Course</a>
+
+                </div>
+              </div>
+            </div>
+            
+           
+            
+         
+    
+            <!-- Add more course cards as needed -->
+          </div>
+        </div>
+      </section>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Show the modal on page load
+    window.addEventListener('load', function () {
+      var emailModal = new bootstrap.Modal(document.getElementById('emailModal'), {
+        backdrop: 'static',
+        keyboard: false
+      });
+      emailModal.show();
+    });
+
+    // Submit form handler
+    document.getElementById('emailForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = document.getElementById('email').value;
+      if (email) {
+        // Here you can add functionality to save the email to a database
+        alert('Thank you! You will receive updates on our free courses.');
+        bootstrap.Modal.getInstance(document.getElementById('emailModal')).hide();
+      }
+    });
+  </script>
+
+</body>
+</html>
